@@ -23,7 +23,7 @@ namespace OnlineAlarmClock
             if (checkSuccess == true)
             {
                 string connectionString = null;
-                connectionString = "Data Source = PUMA-DESKTOP; Initial Catalog = alarm_clocks; Persist Security Info = True; User ID = rlogin; Password = Password9";
+                connectionString = "Data Source = ***; Initial Catalog = alarm_clocks; Persist Security Info = True; User ID = ***; Password = ***";
                 SqlConnection con;
                 
                 using (con = new SqlConnection(connectionString))
@@ -109,7 +109,7 @@ namespace OnlineAlarmClock
         {
             int success1 = 0;
             string connectionString = null;
-            connectionString = "Data Source = PUMA-DESKTOP; Initial Catalog = alarm_clocks; Persist Security Info = True; User ID = rlogin; Password = Password9";
+            connectionString = "Data Source = ***; Initial Catalog = alarm_clocks; Persist Security Info = True; User ID = ***; Password = ***";
             SqlConnection con;
             con = new SqlConnection(connectionString);
             
@@ -181,7 +181,7 @@ namespace OnlineAlarmClock
             }
             catch (Exception ex)
             {
-                string input = "ijfsikhjdiusdijakijsdnikjsa";
+                string input = "error";
                 
                 ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", "alertBox("+input+")", true);
                 //INSERT ALERT DIALOG BOX WITH JAVASCRIPT   ---SERVER CONNECTION ERROR---
