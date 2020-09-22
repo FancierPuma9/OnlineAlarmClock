@@ -181,7 +181,7 @@ namespace OnlineAlarmClock
             }
             catch (Exception ex)
             {
-                string input = "error";
+                string input = "ijfsikhjdiusdijakijsdnikjsa";
                 
                 ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", "alertBox("+input+")", true);
                 //INSERT ALERT DIALOG BOX WITH JAVASCRIPT   ---SERVER CONNECTION ERROR---

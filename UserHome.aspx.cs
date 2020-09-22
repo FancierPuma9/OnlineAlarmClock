@@ -103,7 +103,7 @@ namespace OnlineAlarmClock
 
         [WebMethod] public static void deleteAlarm(int alarmId)
         {
-            string connectionString = "Data Source = PUMA-DESKTOP; Initial Catalog = alarm_clocks; Persist Security Info = True; User ID = rlogin; Password = Password9";
+            string connectionString = "Data Source = ~SERVERNAME~; Initial Catalog = alarm_clocks; Persist Security Info = True; User ID = ~LOGINUSERNAME~ Password = ~LOGINPASSWORD~";
             SqlConnection con = new SqlConnection(connectionString);
             SqlCommand command = new SqlCommand("DELETE_ALARM", con);
             command.CommandType = System.Data.CommandType.StoredProcedure;

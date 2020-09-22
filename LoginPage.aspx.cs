@@ -41,7 +41,7 @@ namespace OnlineAlarmClock
         protected bool CheckPassword()
         {
             string connectionString = null;
-            connectionString = "Data Source = PUMA-DESKTOP; Initial Catalog = alarm_clocks; Persist Security Info = True; User ID = rlogin; Password = Password9";
+            connectionString = "Data Source = ***; Initial Catalog = alarm_clocks; Persist Security Info = True; User ID = ***; Password = ***";
             SqlConnection con;
 
             using (con = new SqlConnection(connectionString))
